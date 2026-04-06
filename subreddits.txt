@@ -1,0 +1,9 @@
+# List of subreddits to scrape for health leads
+health
+AskDocs
+ChronicIllness
+medical
+DiagnoseMe
+Cancer
+mentalhealth
+# Add more below as needed

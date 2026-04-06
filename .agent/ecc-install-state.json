@@ -1,0 +1,2156 @@
+{
+  "schemaVersion": "ecc.install.v1",
+  "installedAt": "2026-03-25T21:36:16.817Z",
+  "target": {
+    "id": "antigravity-project",
+    "target": "antigravity",
+    "kind": "project",
+    "root": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent",
+    "installStatePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\ecc-install-state.json"
+  },
+  "request": {
+    "profile": null,
+    "modules": [],
+    "includeComponents": [],
+    "excludeComponents": [],
+    "legacyLanguages": [
+      "typescript"
+    ],
+    "legacyMode": true
+  },
+  "resolution": {
+    "selectedModules": [
+      "rules-core",
+      "agents-core",
+      "commands-core"
+    ],
+    "skippedModules": []
+  },
+  "source": {
+    "repoVersion": "1.9.0",
+    "repoCommit": null,
+    "manifestVersion": 1
+  },
+  "operations": [
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\agents.md",
+      "sourceRelativePath": "rules/common/agents.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-agents.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\coding-style.md",
+      "sourceRelativePath": "rules/common/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\development-workflow.md",
+      "sourceRelativePath": "rules/common/development-workflow.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-development-workflow.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\git-workflow.md",
+      "sourceRelativePath": "rules/common/git-workflow.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-git-workflow.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\hooks.md",
+      "sourceRelativePath": "rules/common/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\patterns.md",
+      "sourceRelativePath": "rules/common/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\performance.md",
+      "sourceRelativePath": "rules/common/performance.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-performance.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\security.md",
+      "sourceRelativePath": "rules/common/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\common\\testing.md",
+      "sourceRelativePath": "rules/common/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\common-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\cpp\\coding-style.md",
+      "sourceRelativePath": "rules/cpp/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\cpp-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\cpp\\hooks.md",
+      "sourceRelativePath": "rules/cpp/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\cpp-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\cpp\\patterns.md",
+      "sourceRelativePath": "rules/cpp/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\cpp-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\cpp\\security.md",
+      "sourceRelativePath": "rules/cpp/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\cpp-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\cpp\\testing.md",
+      "sourceRelativePath": "rules/cpp/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\cpp-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\csharp\\coding-style.md",
+      "sourceRelativePath": "rules/csharp/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\csharp-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\csharp\\hooks.md",
+      "sourceRelativePath": "rules/csharp/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\csharp-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\csharp\\patterns.md",
+      "sourceRelativePath": "rules/csharp/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\csharp-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\csharp\\security.md",
+      "sourceRelativePath": "rules/csharp/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\csharp-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\csharp\\testing.md",
+      "sourceRelativePath": "rules/csharp/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\csharp-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\golang\\coding-style.md",
+      "sourceRelativePath": "rules/golang/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\golang-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\golang\\hooks.md",
+      "sourceRelativePath": "rules/golang/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\golang-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\golang\\patterns.md",
+      "sourceRelativePath": "rules/golang/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\golang-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\golang\\security.md",
+      "sourceRelativePath": "rules/golang/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\golang-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\golang\\testing.md",
+      "sourceRelativePath": "rules/golang/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\golang-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\java\\coding-style.md",
+      "sourceRelativePath": "rules/java/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\java-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\java\\hooks.md",
+      "sourceRelativePath": "rules/java/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\java-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\java\\patterns.md",
+      "sourceRelativePath": "rules/java/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\java-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\java\\security.md",
+      "sourceRelativePath": "rules/java/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\java-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\java\\testing.md",
+      "sourceRelativePath": "rules/java/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\java-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\kotlin\\coding-style.md",
+      "sourceRelativePath": "rules/kotlin/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\kotlin-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\kotlin\\hooks.md",
+      "sourceRelativePath": "rules/kotlin/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\kotlin-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\kotlin\\patterns.md",
+      "sourceRelativePath": "rules/kotlin/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\kotlin-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\kotlin\\security.md",
+      "sourceRelativePath": "rules/kotlin/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\kotlin-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\kotlin\\testing.md",
+      "sourceRelativePath": "rules/kotlin/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\kotlin-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\perl\\coding-style.md",
+      "sourceRelativePath": "rules/perl/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\perl-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\perl\\hooks.md",
+      "sourceRelativePath": "rules/perl/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\perl-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\perl\\patterns.md",
+      "sourceRelativePath": "rules/perl/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\perl-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\perl\\security.md",
+      "sourceRelativePath": "rules/perl/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\perl-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\perl\\testing.md",
+      "sourceRelativePath": "rules/perl/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\perl-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\php\\coding-style.md",
+      "sourceRelativePath": "rules/php/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\php-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\php\\hooks.md",
+      "sourceRelativePath": "rules/php/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\php-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\php\\patterns.md",
+      "sourceRelativePath": "rules/php/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\php-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\php\\security.md",
+      "sourceRelativePath": "rules/php/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\php-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\php\\testing.md",
+      "sourceRelativePath": "rules/php/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\php-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\python\\coding-style.md",
+      "sourceRelativePath": "rules/python/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\python-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\python\\hooks.md",
+      "sourceRelativePath": "rules/python/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\python-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\python\\patterns.md",
+      "sourceRelativePath": "rules/python/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\python-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\python\\security.md",
+      "sourceRelativePath": "rules/python/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\python-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\python\\testing.md",
+      "sourceRelativePath": "rules/python/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\python-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\README.md",
+      "sourceRelativePath": "rules/README.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\README.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\rust\\coding-style.md",
+      "sourceRelativePath": "rules/rust/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\rust-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\rust\\hooks.md",
+      "sourceRelativePath": "rules/rust/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\rust-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\rust\\patterns.md",
+      "sourceRelativePath": "rules/rust/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\rust-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\rust\\security.md",
+      "sourceRelativePath": "rules/rust/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\rust-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\rust\\testing.md",
+      "sourceRelativePath": "rules/rust/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\rust-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\swift\\coding-style.md",
+      "sourceRelativePath": "rules/swift/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\swift-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\swift\\hooks.md",
+      "sourceRelativePath": "rules/swift/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\swift-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\swift\\patterns.md",
+      "sourceRelativePath": "rules/swift/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\swift-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\swift\\security.md",
+      "sourceRelativePath": "rules/swift/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\swift-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\swift\\testing.md",
+      "sourceRelativePath": "rules/swift/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\swift-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\typescript\\coding-style.md",
+      "sourceRelativePath": "rules/typescript/coding-style.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\typescript-coding-style.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\typescript\\hooks.md",
+      "sourceRelativePath": "rules/typescript/hooks.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\typescript-hooks.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\typescript\\patterns.md",
+      "sourceRelativePath": "rules/typescript/patterns.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\typescript-patterns.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\typescript\\security.md",
+      "sourceRelativePath": "rules/typescript/security.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\typescript-security.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "rules-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\rules\\typescript\\testing.md",
+      "sourceRelativePath": "rules/typescript/testing.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\rules\\typescript-testing.md",
+      "strategy": "flatten-copy",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\api-design\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\api-design\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\api-design\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\api-design\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\api-design\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\api-design\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\article-writing\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\article-writing\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\article-writing\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\article-writing\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\article-writing\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\article-writing\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\backend-patterns\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\backend-patterns\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\backend-patterns\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\backend-patterns\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\backend-patterns\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\backend-patterns\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\bun-runtime\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\bun-runtime\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\bun-runtime\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\bun-runtime\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\bun-runtime\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\bun-runtime\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\claude-api\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\claude-api\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\claude-api\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\claude-api\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\claude-api\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\claude-api\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\coding-standards\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\coding-standards\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\coding-standards\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\coding-standards\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\coding-standards\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\coding-standards\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\content-engine\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\content-engine\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\content-engine\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\content-engine\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\content-engine\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\content-engine\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\crosspost\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\crosspost\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\crosspost\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\crosspost\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\crosspost\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\crosspost\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\deep-research\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\deep-research\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\deep-research\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\deep-research\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\deep-research\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\deep-research\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\dmux-workflows\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\dmux-workflows\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\dmux-workflows\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\dmux-workflows\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\dmux-workflows\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\dmux-workflows\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\documentation-lookup\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\documentation-lookup\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\documentation-lookup\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\documentation-lookup\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\documentation-lookup\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\documentation-lookup\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\e2e-testing\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\e2e-testing\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\e2e-testing\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\e2e-testing\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\e2e-testing\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\e2e-testing\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\eval-harness\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\eval-harness\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\eval-harness\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\eval-harness\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\eval-harness\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\eval-harness\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\everything-claude-code\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\everything-claude-code\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\everything-claude-code\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\everything-claude-code\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\everything-claude-code\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\everything-claude-code\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\exa-search\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\exa-search\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\exa-search\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\exa-search\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\exa-search\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\exa-search\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\fal-ai-media\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\fal-ai-media\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\fal-ai-media\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\fal-ai-media\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\fal-ai-media\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\fal-ai-media\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\frontend-patterns\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\frontend-patterns\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\frontend-patterns\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\frontend-patterns\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\frontend-patterns\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\frontend-patterns\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\frontend-slides\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\frontend-slides\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\frontend-slides\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\frontend-slides\\STYLE_PRESETS.md",
+      "sourceRelativePath": ".agents\\skills\\frontend-slides\\STYLE_PRESETS.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\frontend-slides\\STYLE_PRESETS.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\frontend-slides\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\frontend-slides\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\frontend-slides\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\investor-materials\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\investor-materials\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\investor-materials\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\investor-materials\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\investor-materials\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\investor-materials\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\investor-outreach\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\investor-outreach\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\investor-outreach\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\investor-outreach\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\investor-outreach\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\investor-outreach\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\market-research\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\market-research\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\market-research\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\market-research\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\market-research\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\market-research\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\mcp-server-patterns\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\mcp-server-patterns\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\mcp-server-patterns\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\nextjs-turbopack\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\nextjs-turbopack\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\nextjs-turbopack\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\nextjs-turbopack\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\nextjs-turbopack\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\nextjs-turbopack\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\security-review\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\security-review\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\security-review\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\security-review\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\security-review\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\security-review\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\strategic-compact\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\strategic-compact\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\strategic-compact\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\strategic-compact\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\strategic-compact\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\strategic-compact\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\tdd-workflow\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\tdd-workflow\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\tdd-workflow\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\tdd-workflow\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\tdd-workflow\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\tdd-workflow\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\verification-loop\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\verification-loop\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\verification-loop\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\verification-loop\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\verification-loop\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\verification-loop\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\video-editing\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\video-editing\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\video-editing\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\video-editing\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\video-editing\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\video-editing\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\x-api\\SKILL.md",
+      "sourceRelativePath": ".agents\\skills\\x-api\\SKILL.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\x-api\\SKILL.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agents\\skills\\x-api\\agents\\openai.yaml",
+      "sourceRelativePath": ".agents\\skills\\x-api\\agents\\openai.yaml",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\.agents\\skills\\x-api\\agents\\openai.yaml",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\architect.md",
+      "sourceRelativePath": "agents\\architect.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\architect.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\build-error-resolver.md",
+      "sourceRelativePath": "agents\\build-error-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\build-error-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\chief-of-staff.md",
+      "sourceRelativePath": "agents\\chief-of-staff.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\chief-of-staff.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\code-reviewer.md",
+      "sourceRelativePath": "agents\\code-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\code-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\cpp-build-resolver.md",
+      "sourceRelativePath": "agents\\cpp-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\cpp-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\cpp-reviewer.md",
+      "sourceRelativePath": "agents\\cpp-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\cpp-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\database-reviewer.md",
+      "sourceRelativePath": "agents\\database-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\database-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\doc-updater.md",
+      "sourceRelativePath": "agents\\doc-updater.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\doc-updater.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\docs-lookup.md",
+      "sourceRelativePath": "agents\\docs-lookup.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\docs-lookup.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\e2e-runner.md",
+      "sourceRelativePath": "agents\\e2e-runner.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\e2e-runner.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\flutter-reviewer.md",
+      "sourceRelativePath": "agents\\flutter-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\flutter-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\go-build-resolver.md",
+      "sourceRelativePath": "agents\\go-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\go-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\go-reviewer.md",
+      "sourceRelativePath": "agents\\go-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\go-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\harness-optimizer.md",
+      "sourceRelativePath": "agents\\harness-optimizer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\harness-optimizer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\java-build-resolver.md",
+      "sourceRelativePath": "agents\\java-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\java-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\java-reviewer.md",
+      "sourceRelativePath": "agents\\java-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\java-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\kotlin-build-resolver.md",
+      "sourceRelativePath": "agents\\kotlin-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\kotlin-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\kotlin-reviewer.md",
+      "sourceRelativePath": "agents\\kotlin-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\kotlin-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\loop-operator.md",
+      "sourceRelativePath": "agents\\loop-operator.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\loop-operator.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\planner.md",
+      "sourceRelativePath": "agents\\planner.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\planner.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\python-reviewer.md",
+      "sourceRelativePath": "agents\\python-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\python-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\pytorch-build-resolver.md",
+      "sourceRelativePath": "agents\\pytorch-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\pytorch-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\refactor-cleaner.md",
+      "sourceRelativePath": "agents\\refactor-cleaner.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\refactor-cleaner.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\rust-build-resolver.md",
+      "sourceRelativePath": "agents\\rust-build-resolver.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\rust-build-resolver.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\rust-reviewer.md",
+      "sourceRelativePath": "agents\\rust-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\rust-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\security-reviewer.md",
+      "sourceRelativePath": "agents\\security-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\security-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\tdd-guide.md",
+      "sourceRelativePath": "agents\\tdd-guide.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\tdd-guide.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\agents\\typescript-reviewer.md",
+      "sourceRelativePath": "agents\\typescript-reviewer.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\skills\\typescript-reviewer.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "agents-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\AGENTS.md",
+      "sourceRelativePath": "AGENTS.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\AGENTS.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\aside.md",
+      "sourceRelativePath": "commands\\aside.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\aside.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\build-fix.md",
+      "sourceRelativePath": "commands\\build-fix.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\build-fix.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\checkpoint.md",
+      "sourceRelativePath": "commands\\checkpoint.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\checkpoint.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\claw.md",
+      "sourceRelativePath": "commands\\claw.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\claw.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\code-review.md",
+      "sourceRelativePath": "commands\\code-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\code-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\context-budget.md",
+      "sourceRelativePath": "commands\\context-budget.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\context-budget.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\cpp-build.md",
+      "sourceRelativePath": "commands\\cpp-build.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\cpp-build.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\cpp-review.md",
+      "sourceRelativePath": "commands\\cpp-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\cpp-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\cpp-test.md",
+      "sourceRelativePath": "commands\\cpp-test.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\cpp-test.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\devfleet.md",
+      "sourceRelativePath": "commands\\devfleet.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\devfleet.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\docs.md",
+      "sourceRelativePath": "commands\\docs.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\docs.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\e2e.md",
+      "sourceRelativePath": "commands\\e2e.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\e2e.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\eval.md",
+      "sourceRelativePath": "commands\\eval.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\eval.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\evolve.md",
+      "sourceRelativePath": "commands\\evolve.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\evolve.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\go-build.md",
+      "sourceRelativePath": "commands\\go-build.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\go-build.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\go-review.md",
+      "sourceRelativePath": "commands\\go-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\go-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\go-test.md",
+      "sourceRelativePath": "commands\\go-test.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\go-test.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\gradle-build.md",
+      "sourceRelativePath": "commands\\gradle-build.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\gradle-build.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\harness-audit.md",
+      "sourceRelativePath": "commands\\harness-audit.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\harness-audit.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\instinct-export.md",
+      "sourceRelativePath": "commands\\instinct-export.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\instinct-export.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\instinct-import.md",
+      "sourceRelativePath": "commands\\instinct-import.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\instinct-import.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\instinct-status.md",
+      "sourceRelativePath": "commands\\instinct-status.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\instinct-status.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\kotlin-build.md",
+      "sourceRelativePath": "commands\\kotlin-build.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\kotlin-build.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\kotlin-review.md",
+      "sourceRelativePath": "commands\\kotlin-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\kotlin-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\kotlin-test.md",
+      "sourceRelativePath": "commands\\kotlin-test.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\kotlin-test.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\learn-eval.md",
+      "sourceRelativePath": "commands\\learn-eval.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\learn-eval.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\learn.md",
+      "sourceRelativePath": "commands\\learn.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\learn.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\loop-start.md",
+      "sourceRelativePath": "commands\\loop-start.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\loop-start.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\loop-status.md",
+      "sourceRelativePath": "commands\\loop-status.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\loop-status.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\model-route.md",
+      "sourceRelativePath": "commands\\model-route.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\model-route.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\multi-backend.md",
+      "sourceRelativePath": "commands\\multi-backend.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\multi-backend.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\multi-execute.md",
+      "sourceRelativePath": "commands\\multi-execute.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\multi-execute.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\multi-frontend.md",
+      "sourceRelativePath": "commands\\multi-frontend.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\multi-frontend.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\multi-plan.md",
+      "sourceRelativePath": "commands\\multi-plan.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\multi-plan.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\multi-workflow.md",
+      "sourceRelativePath": "commands\\multi-workflow.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\multi-workflow.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\orchestrate.md",
+      "sourceRelativePath": "commands\\orchestrate.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\orchestrate.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\plan.md",
+      "sourceRelativePath": "commands\\plan.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\plan.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\pm2.md",
+      "sourceRelativePath": "commands\\pm2.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\pm2.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\projects.md",
+      "sourceRelativePath": "commands\\projects.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\projects.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\promote.md",
+      "sourceRelativePath": "commands\\promote.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\promote.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\prompt-optimize.md",
+      "sourceRelativePath": "commands\\prompt-optimize.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\prompt-optimize.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\prune.md",
+      "sourceRelativePath": "commands\\prune.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\prune.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\python-review.md",
+      "sourceRelativePath": "commands\\python-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\python-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\quality-gate.md",
+      "sourceRelativePath": "commands\\quality-gate.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\quality-gate.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\refactor-clean.md",
+      "sourceRelativePath": "commands\\refactor-clean.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\refactor-clean.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\resume-session.md",
+      "sourceRelativePath": "commands\\resume-session.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\resume-session.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\rules-distill.md",
+      "sourceRelativePath": "commands\\rules-distill.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\rules-distill.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\rust-build.md",
+      "sourceRelativePath": "commands\\rust-build.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\rust-build.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\rust-review.md",
+      "sourceRelativePath": "commands\\rust-review.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\rust-review.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\rust-test.md",
+      "sourceRelativePath": "commands\\rust-test.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\rust-test.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\save-session.md",
+      "sourceRelativePath": "commands\\save-session.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\save-session.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\sessions.md",
+      "sourceRelativePath": "commands\\sessions.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\sessions.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\setup-pm.md",
+      "sourceRelativePath": "commands\\setup-pm.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\setup-pm.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\skill-create.md",
+      "sourceRelativePath": "commands\\skill-create.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\skill-create.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\skill-health.md",
+      "sourceRelativePath": "commands\\skill-health.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\skill-health.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\tdd.md",
+      "sourceRelativePath": "commands\\tdd.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\tdd.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\test-coverage.md",
+      "sourceRelativePath": "commands\\test-coverage.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\test-coverage.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\update-codemaps.md",
+      "sourceRelativePath": "commands\\update-codemaps.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\update-codemaps.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\update-docs.md",
+      "sourceRelativePath": "commands\\update-docs.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\update-docs.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    },
+    {
+      "kind": "copy-file",
+      "moduleId": "commands-core",
+      "sourcePath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\commands\\verify.md",
+      "sourceRelativePath": "commands\\verify.md",
+      "destinationPath": "D:\\Work\\Personal\\everything-claude-code-main\\everything-claude-code-main\\.agent\\workflows\\verify.md",
+      "strategy": "preserve-relative-path",
+      "ownership": "managed",
+      "scaffoldOnly": false
+    }
+  ]
+}
