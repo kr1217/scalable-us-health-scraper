@@ -154,3 +154,36 @@ cython_debug/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ============================================================
+# Project-specific ignores
+# ============================================================
+
+# Harvested lead data — NEVER commit PII exports
+*.xlsx
+*.csv
+exports/
+health_leads_export.csv
+health_leads_formatted.xlsx
+raw_row.txt
+
+# Celery beat schedule binary state
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+celerybeat.pid
+
+# Ad-hoc debug/diagnostic scripts (not part of clean codebase)
+debug_proxies.py
+diagnose_proxy_html.py
+check_db.py
+export_data.py
+audit_log.txt
+
+# Verbose test/debug runner scripts at root
+test_run.py
+test_twitter_run.py
+test_resilience.py
+
+# x-tweet-fetcher: 3rd-party tool with its own git repo — clone separately
+x-tweet-fetcher/

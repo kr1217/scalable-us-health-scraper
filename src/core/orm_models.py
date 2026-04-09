@@ -17,7 +17,8 @@ class LeadORM(Base):
     disease_history = Column(Text, nullable=True)
     source = Column(String(100), nullable=True)
     source_url = Column(String(255), nullable=True)
-    source_id = Column(String(100), nullable=True)
+    source_id = Column(String(100), nullable=True, unique=True, index=True)
+    identity_hash = Column(String(128), nullable=True, unique=True, index=True)
     extracted_at = Column(DateTime, default=datetime.utcnow)
 
 class RawScrapeORM(Base):

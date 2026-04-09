@@ -7,3 +7,251 @@ DiagnoseMe
 Cancer
 mentalhealth
 # Add more below as needed
+AskMedical
+MedicalQuestions
+HealthAnxiety
+AskHealth
+YourDoctor
+DoctorAdvice
+Medic
+Patient
+rarediseases
+illnessfakers (caution: may contain controversial content)
+
+# Disease specific subreddits
+cancer
+diabetes
+heartdisease
+hypertension
+stroke
+alzheimers
+parkinsons
+multiplesclerosis
+epilepsy
+asthma
+copd
+ibs
+crohnsdisease
+ulcerativecolitis
+lupus
+fibromyalgia
+cfs (chronic fatigue syndrome)
+mecfs
+lyme
+arthritis
+rheumatoid
+osteoporosis
+gout
+migraine
+clusterheads
+tbi (traumatic brain injury)
+spinalcordinjuries
+hivaids
+hepatitis
+kidneydisease
+pku (phenylketonuria)
+cysticfibrosis
+sicklecell
+hemophilia
+thalassemia
+thyroidhealth
+hashimotos
+gravesdisease
+addisons
+cushings
+pcos
+endometriosis
+infertility
+pregnancy
+beyondthebump
+NICUparents
+breastfeeding
+parenting
+eldercare
+caregivers
+mentalhealth
+anxiety
+depression
+bipolar
+schizophrenia
+ocd
+adhd
+autism
+aspergers
+eatingdisorders
+ptsd
+borderlinepersonality
+dissociation
+psychosis
+schizoaffective
+selfharm
+suicidewatch
+stopselfharm
+recovery
+addiction
+alcoholism
+stopdrinking
+leaves (quit smoking)
+quitsmoking
+vaping
+nicotine
+caffeine
+drugs
+opiates
+benzorecovery
+kratom
+cbd
+medicalmarijuana
+cannabis
+psychedelics
+microdosing
+nootropics
+biohacking
+longevity
+antiaging
+lifeextension
+bluezones
+healthysleep
+sleepapnea
+insomnia
+restlessleg
+narcolepsy
+cfs (already listed)
+me (myalgic encephalomyelitis)
+chronicpain
+fibromyalgia (already)
+migraine (already)
+clusterheadaches (already)
+tensionheadaches
+tmj
+backpain
+neckpain
+shoulderpain
+kneepain
+hippain
+footpain
+arthritis (already)
+osteoporosis (already)
+gout (already)
+lupus (already)
+scleroderma
+sjogrens
+vasculitis
+sarcoidosis
+hemochromatosis
+porphyria
+ehlerdanlos
+marfan
+cysticfibrosis (already)
+alphal (alpha-1 antitrypsin deficiency)
+hemophilia (already)
+thalassemia (already)
+sicklecell (already)
+leukemia
+lymphoma
+myeloma
+myelodysplasia
+aplasticanemia
+bonecancer
+braincancer
+breastcancer
+cervicalcancer
+colorectalcancer
+esophageal
+gallbladder
+kidneycancer
+livercancer
+lungcancer
+melanoma
+mesothelioma
+ovariancancer
+pancreaticcancer
+prostatecancer
+skincancer
+stomachcancer
+testicularcancer
+thyroidcancer
+uterinecancer
+vulvarcancer
+waldenstroms
+wilmstumor
+
+# nutrition & Fitness
+nutrition
+diet
+keto
+paleo
+vegan
+vegetarian
+intermittentfasting
+fasting
+weightloss
+bodybuilding
+fitness
+exercise
+running
+cycling
+swimming
+triathlon
+marathon
+ironman
+crossfit
+powerlifting
+strongman
+olympiclifting
+gymnastics
+dance
+pilates
+barre
+zumba
+aerobics
+cardio
+hiit
+yoga
+meditation
+mindfulness
+wellness
+holistichealth
+functionalmedicine
+integrativemedicine
+naturopathy
+homeopathy
+acupuncture
+chiropractic
+osteopathy
+herbalism
+supplements
+nootropics (already)
+biohacking (already)
+
+#public health & professionals
+publichealth
+globalhealth
+epidemiology
+biostatistics
+healthIT
+healthinformatics
+medtech
+biotech
+pharma
+clinicalresearch
+clinicaltrials
+FDA
+CDC
+WHO
+NIH
+medicaldevices
+digitalhealth
+telehealth
+ehealth
+mhealth
+wearables
+genomics
+precisionmedicine
+personalizedmedicine
+regenerativemedicine
+stemcells
+geneTherapy
+immunotherapy
+vaccines
+antivaxx

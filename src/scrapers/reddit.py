@@ -1,103 +1,105 @@
 import asyncio
-import httpx
+import random
 from typing import List, Optional, Dict, Any
-from datetime import datetime
+
 from ..core.config import settings
-from ..core.models import Lead
-from ..pipelines.extract import extractor
 from .base import BaseScraper
+from ..utils.mongo_storage import save_raw_document
+
+from celery.utils.log import get_task_logger
+
+logger = get_task_logger(__name__)
 
 class RedditScraper(BaseScraper):
     def __init__(self):
+        super().__init__()
         self.base_url = settings.REDDIT_BASE_URL
         self.post_limit = settings.SCRAPE_POST_LIMIT
-        self.delay = settings.DELAY_BETWEEN_SCRAPES
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
 
-    async def _fetch_comments(self, client: httpx.AsyncClient, post_id: str) -> str:
-        """Fetch top-level comments for a given post ID."""
-        url = f"{self.base_url}/comments/{post_id}.json"
-        try:
-            response = await client.get(url)
-            if response.status_code == 200:
+    async def _fetch_comments(self, post_id: str) -> str:
+        """Fetch comments using centralized framework logic."""
+        url = f"{self.base_url}/comments/{post_id}.json?limit=500&depth=1"
+        
+        logger.warning(f"  [HEARTBEAT] Attemping deep comment fetch for post {post_id}...")
+        
+        response = await self._request_with_retry(url)
+        if response and response.status_code == 200:
+            try:
                 data = response.json()
-                # Reddit comments JSON is a list: [post_info, comment_tree]
                 if len(data) > 1:
                     children = data[1].get("data", {}).get("children", [])
-                    comments = []
-                    for child in children[:10]:  # Limit to top 10 comments
-                        body = child.get("data", {}).get("body", "")
-                        if body:
-                            comments.append(body)
-                    return "\n--- COMMENT ---\n".join(comments)
-        except Exception as e:
-            print(f"Error fetching comments for {post_id}: {e}")
+                    comments = [c.get("data", {}).get("body", "") for c in children if c.get("kind") == "t1"]
+                    logger.warning(f"  [HEARTBEAT] Successfully retrieved {len(comments)} comments.")
+                    return "\n--- COMMENT ---\n".join(comments[:500])
+            except Exception as e:
+                logger.warning(f"  [HEARTBEAT] ⚠️ Parser error for post {post_id}: {e}")
         return ""
 
-    async def scrape(self, subreddit_name: str) -> List[Lead]:
-        """Scrape the given subreddit using pagination and comment extraction."""
-        leads = []
+    async def scrape(self, subreddit_name: str) -> bool:
+        """Standardized scrape loop using the Scraper Framework."""
         after = None
         posts_collected = 0
         
-        async with httpx.AsyncClient(headers=self.headers, timeout=30.0) as client:
-            # Loop for pagination
-            while posts_collected < self.post_limit:
-                url = f"{self.base_url}/r/{subreddit_name}/new.json?limit=100"
-                if after:
-                    url += f"&after={after}"
-                
-                print(f"Scraping {subreddit_name} (Total so far: {posts_collected}) via {url}")
-                
-                try:
-                    response = await client.get(url)
-                    response.raise_for_status()
-                    data = response.json().get("data", {})
-                    
-                    children = data.get("children", [])
-                    if not children:
-                        break
-                    
-                    for post in children:
-                        post_data = post.get("data", {})
-                        
-                        # Extract attributes
-                        title = post_data.get("title", "")
-                        body = post_data.get("selftext", "")
-                        post_id_full = post_data.get("name", "") # e.g. t3_12345
-                        post_id_short = post_data.get("id", "")   # e.g. 12345
-                        
-                        # Fetch comments for deeper context
-                        comments_text = await self._fetch_comments(client, post_id_short)
-                        
-                        # Combine text for extraction
-                        combined_text = f"TITLE: {title}\nBODY: {body}\nCOMMENTS:\n{comments_text}"
-                        
-                        permalink = post_data.get("permalink", "")
-                        post_url = f"{self.base_url}{permalink}"
-                        
-                        # Extract lead
-                        lead = extractor.extract_lead(combined_text, "reddit", post_url, post_id_full)
-                        leads.append(lead)
-                        
-                        posts_collected += 1
-                        if posts_collected >= self.post_limit:
-                            break
-                    
-                    after = data.get("after")
-                    if not after:
-                        break
-                        
-                    # Politeness delay between pages
-                    await asyncio.sleep(self.delay)
-                    
-                except Exception as e:
-                    print(f"Error on page {after}: {e}")
-                    break
+        logger.warning(f"[PHASE: DATA AQUISITION] Started scraping r/{subreddit_name}")
         
-        return leads
+        while posts_collected < self.post_limit:
+            url = f"{self.base_url}/r/{subreddit_name}/new.json?limit=100"
+            if after: 
+                url += f"&after={after}"
+            
+            logger.warning(f"[HEARTBEAT] Requesting post list for r/{subreddit_name}...")
+            response = await self._request_with_retry(url)
+            
+            if not response or response.status_code != 200:
+                logger.warning(f"[HEARTBEAT] 🔄 Connection failed. Rotating proxy and waiting...")
+                await asyncio.sleep(5)
+                continue
 
-    async def save_lead(self, lead: Lead): pass
-    async def save_raw(self, raw_data: str, url: str): pass
+            try:
+                data = response.json().get("data", {})
+                children = data.get("children", [])
+                if not children: 
+                    logger.warning(f"[HEARTBEAT] No more posts found in r/{subreddit_name}.")
+                    break
+                
+                for post in children:
+                    post_data = post.get("data", {})
+                    source_id = post_data.get("name") # e.g. t3_1sg0gx0
+                    
+                    # 1. SYSTEMIC DEDUPLICATION: Skip before we even touch the text
+                    if await self.is_already_scraped(source_id):
+                        logger.warning(f"[DUPLICATE] Skipping already harvested post: {source_id}")
+                        continue
+                    
+                    # 2. HARVEST: Fetch comments and combine
+                    comments_text = await self._fetch_comments(post_data.get("id"))
+                    raw_text = f"TITLE: {post_data.get('title')}\nBODY: {post_data.get('selftext')}\nCOMMENTS:\n{comments_text}"
+                    
+                    # 3. STORE: Move to MongoDB
+                    await save_raw_document(
+                        source="reddit",
+                        raw_text=raw_text[:100000],
+                        url=f"{self.base_url}{post_data.get('permalink')}",
+                        subreddit=subreddit_name,
+                        source_id=source_id
+                    )
+                    
+                    posts_collected += 1
+                    logger.warning(f"[PROGRESS] r/{subreddit_name}: {posts_collected}/{self.post_limit}")
+                    
+                    if posts_collected >= self.post_limit: 
+                        break
+                    
+                    # 4. RATE LIMIT: Centralized pacing
+                    await self._rate_limit_sleep()
+                    
+                after = data.get("after")
+                if not after: 
+                    break
+                    
+            except Exception as e:
+                logger.warning(f"[HEARTBEAT] ❌ Critical Error: {e}")
+                await asyncio.sleep(2)
+                    
+        logger.warning(f"[PHASE: COMPLETE] r/{subreddit_name} scraping finished.")
+        return True

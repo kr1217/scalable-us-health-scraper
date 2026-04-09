@@ -4,10 +4,12 @@ from ..core.database import AsyncSessionLocal, get_mongo_client, get_mongo_db
 from ..core.models import Lead, RawData
 from ..core.orm_models import LeadORM
 from ..scrapers.reddit import RedditScraper
+from ..scrapers.twitter import TwitterScraper
 from .celery_app import celery_app
 
 # Initialize scraper centrally
 scraper = RedditScraper()
+twitter_scraper = TwitterScraper()
 
 @celery_app.task(name='src.tasks.worker_tasks.scrape_subreddit_task', bind=True, max_retries=3)
 def scrape_subreddit_task(self, subreddit_name: str):
@@ -15,49 +17,19 @@ def scrape_subreddit_task(self, subreddit_name: str):
     # Run the async scraping flow using asyncio.run
     return asyncio.run(run_scraping_flow(subreddit_name))
 
-async def run_scraping_flow(subreddit_name: str):
-    """Async flow to scrape and store lead data."""
-    print(f"Executing scraping task for: {subreddit_name}")
-    
-    # 1. Scrape via Playwright
-    leads = await scraper.scrape(subreddit_name)
-    
-    # 2. Save to Databases
-    client = get_mongo_client()
-    mongo_db = await get_mongo_db(client)
-    async with AsyncSessionLocal() as pg_session:
-        for lead in leads:
-            # Only save to Postgres if we found SOMETHING in the lead
-            if (lead.first_name or lead.phone_number or lead.state) and lead.first_name != "unknown":
-                # Create ORM model
-                lead_orm = LeadORM(
-                    first_name=lead.first_name,
-                    last_name=lead.last_name,
-                    date_of_birth=lead.date_of_birth,
-                    phone_number=lead.phone_number,
-                    address=lead.address,
-                    city=lead.city,
-                    state=lead.state,
-                    disease_history=lead.disease_history,
-                    source=lead.source,
-                    source_url=lead.source_url,
-                    source_id=lead.source_id,
-                    extracted_at=lead.extracted_at
-                )
-                pg_session.add(lead_orm)
-                print(f"QUEUED LEAD FOR DB: {lead.first_name} {lead.last_name}")
-            
-            # 3. Store raw data in MongoDB (regardless of extraction success)
-            raw_entry = {
-                "source": "reddit",
-                "subreddit": subreddit_name,
-                "url": lead.source_url,
-                "timestamp": lead.extracted_at.isoformat(),
-                "extracted_lead": lead.model_dump() if lead.first_name else None
-            }
-            # This is where the authentication was failing previously
-            await mongo_db.raw_scrapes.insert_one(raw_entry)
-            
-        await pg_session.commit()
+@celery_app.task(name='src.tasks.worker_tasks.scrape_twitter_task', bind=True, max_retries=3)
+def scrape_twitter_task(self, query: str, max_results: int = 50):
+    """Celery task to scrape Twitter for a health query."""
+    return asyncio.run(run_twitter_scraping(query, max_results))
 
-    return {"status": "success", "subreddit": subreddit_name, "leads_queued": len(leads)}
+async def run_scraping_flow(subreddit_name: str):
+    """Async flow to trigger Reddit scraping."""
+    print(f"Executing scraping task for: {subreddit_name}")
+    success = await scraper.scrape(subreddit_name)
+    return {"status": "success" if success else "failed", "subreddit": subreddit_name}
+
+async def run_twitter_scraping(query: str, max_results: int):
+    """Async flow to trigger Twitter API scraping."""
+    print(f"Executing Twitter API task for: {query}")
+    success = await twitter_scraper.scrape(query, max_results)
+    return {"status": "success" if success else "failed", "query": query}
