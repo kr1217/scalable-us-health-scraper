@@ -28,7 +28,13 @@ class RedditScraper(BaseScraper):
                 data = response.json()
                 if len(data) > 1:
                     children = data[1].get("data", {}).get("children", [])
-                    comments = [c.get("data", {}).get("body", "") for c in children if c.get("kind") == "t1"]
+                    comments = []
+                    for c in children:
+                        if c.get("kind") == "t1":
+                            author = c.get("data", {}).get("author", "unknown")
+                            body = c.get("data", {}).get("body", "")
+                            comments.append(f"AUTHOR: {author} | TEXT: {body}")
+                    
                     logger.warning(f"  [HEARTBEAT] Successfully retrieved {len(comments)} comments.")
                     return "\n--- COMMENT ---\n".join(comments[:500])
             except Exception as e:
@@ -80,6 +86,7 @@ class RedditScraper(BaseScraper):
                         source="reddit",
                         raw_text=raw_text[:100000],
                         url=f"{self.base_url}{post_data.get('permalink')}",
+                        username=post_data.get('author'),
                         subreddit=subreddit_name,
                         source_id=source_id
                     )

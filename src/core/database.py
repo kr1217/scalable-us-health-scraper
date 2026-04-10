@@ -10,8 +10,8 @@ pg_engine = create_async_engine(
     settings.DATABASE_URL,
     echo=settings.DEBUG,
     future=True,
-    pool_size=1,          # Force single connection to avoid asyncpg concurrency issues
-    max_overflow=0,
+    pool_size=5,          # Increse pool size for batch operations
+    max_overflow=10,      # Allow some overflow
     pool_pre_ping=True,   # Check connection health before use
     pool_recycle=3600,
     connect_args={"server_settings": {"application_name": "scraper"}}
@@ -44,5 +44,6 @@ async def get_mongo_db(client: AsyncIOMotorClient):
 
 async def create_tables():
     "Create database tables defined in SQLAlchemy models."
+    from . import orm_models  # Import models to register them with Base.metadata
     async with pg_engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)

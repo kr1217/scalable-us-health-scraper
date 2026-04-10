@@ -28,6 +28,13 @@ class Settings(BaseSettings):
     # Ollama Settings
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL: str = "llama3.2:3b"
+    
+    # Enrichment Settings
+    ENRICHMENT_ENABLED: bool = False
+    ENRICHMENT_ENABLED_SOURCES: Optional[str] = None
+    ENRICHMENT_CACHE_TTL_HOURS: int = 168
+    BLACKBIRD_PATH: str = "blackbird"
+    WHATSMYNAME_DELAY: float = 0.3
 
     # Pydantic v2 Config
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")

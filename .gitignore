@@ -187,3 +187,6 @@ test_resilience.py
 
 # x-tweet-fetcher: 3rd-party tool with its own git repo — clone separately
 x-tweet-fetcher/
+
+# Caching files
+twitter_discover_cache*.json

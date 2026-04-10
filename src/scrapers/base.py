@@ -21,6 +21,10 @@ class BaseScraper(ABC):
         self.current_proxy = None
         self.delay = settings.DELAY_BETWEEN_SCRAPES
         self.jitter = settings.DELAY_JITTER
+        
+        # Lazy import to avoid circular dependency
+        from ..enrichment.manager import EnrichmentManager
+        self.enrichment_manager = EnrichmentManager()
 
     async def _get_next_proxy(self) -> Optional[str]:
         self.current_proxy = await self.proxy_manager.get_next_proxy()

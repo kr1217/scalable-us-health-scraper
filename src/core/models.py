@@ -8,6 +8,7 @@ class Lead(BaseModel):
     last_name: Optional[str] = Field(None, description="Last name of the potential lead")
     date_of_birth: Optional[str] = Field(None, description="Date of birth (extracted as string for now)")
     phone_number: Optional[str] = Field(None, description="US Phone number pattern match")
+    phone_number_source: Optional[str] = Field(None, description="Platform that provided the phone number")
     address: Optional[str] = Field(None, description="Full address if available")
     city: Optional[str] = Field(None, description="City mention")
     state: Optional[str] = Field(None, description="State abbreviation or name")

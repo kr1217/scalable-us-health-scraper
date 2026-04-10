@@ -3,6 +3,7 @@ import json
 import os
 import subprocess
 import sys
+import urllib.parse
 from datetime import datetime
 from typing import Optional, List, Dict, Any
 
@@ -59,6 +60,7 @@ class TwitterScraper(BaseScraper):
                 capture_output=True, 
                 text=True, 
                 env=env,
+                encoding="utf-8", # Force UTF-8 for emoji support on Windows
                 timeout=90 # Discovery with fallback can take longer
             )
             
@@ -104,11 +106,22 @@ class TwitterScraper(BaseScraper):
                     f"URL: {url}"
                 )
                 
+                # Extract handle from URL for enrichment
+                handle = None
+                try:
+                    parsed_url = urllib.parse.urlparse(url)
+                    path_parts = parsed_url.path.strip("/").split("/")
+                    if path_parts:
+                        handle = path_parts[0]
+                except Exception:
+                    pass
+
                 # Save to MongoDB
                 await save_raw_document(
                     source="twitter_x_discover",
                     raw_text=formatted_text[:100000],
                     url=url,
+                    username=handle,
                     source_id=source_id,
                     query=query,
                     discovery_source=source_name
